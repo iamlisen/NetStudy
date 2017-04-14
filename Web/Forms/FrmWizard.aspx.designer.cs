@@ -11,16 +11,22 @@
 namespace Web {
 	
 	
-	public partial class Default {
+	public partial class FrmWizard {
 		
 		protected System.Web.UI.HtmlControls.HtmlForm form1;
 		
-		protected System.Web.UI.WebControls.BulletedList bulleted1;
+		protected System.Web.UI.WebControls.Wizard wizard;
 		
-		protected System.Web.UI.WebControls.FileUpload fileUpload1;
+		protected System.Web.UI.WebControls.WizardStep step1;
 		
-		protected System.Web.UI.WebControls.TextBox txtFileInfo;
+		protected System.Web.UI.WebControls.TextBox txt1;
 		
-		protected System.Web.UI.WebControls.Button button1;
+		protected System.Web.UI.WebControls.WizardStep step2;
+		
+		protected System.Web.UI.WebControls.TextBox txt2;
+		
+		protected System.Web.UI.WebControls.WizardStep step3;
+		
+		protected System.Web.UI.WebControls.TextBox txt3;
 	}
 }

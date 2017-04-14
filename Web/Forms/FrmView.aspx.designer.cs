@@ -11,16 +11,18 @@
 namespace Web {
 	
 	
-	public partial class Default {
+	public partial class FrmView {
 		
 		protected System.Web.UI.HtmlControls.HtmlForm form1;
 		
-		protected System.Web.UI.WebControls.BulletedList bulleted1;
+		protected System.Web.UI.WebControls.MultiView multiView;
 		
-		protected System.Web.UI.WebControls.FileUpload fileUpload1;
+		protected System.Web.UI.WebControls.View view1;
 		
-		protected System.Web.UI.WebControls.TextBox txtFileInfo;
+		protected System.Web.UI.WebControls.View view2;
 		
-		protected System.Web.UI.WebControls.Button button1;
+		protected System.Web.UI.WebControls.View view3;
+		
+		protected System.Web.UI.WebControls.Button btnNext;
 	}
 }
