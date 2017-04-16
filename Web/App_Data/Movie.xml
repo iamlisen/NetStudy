@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<movies>
+	<movie>
+		<title>速度与激情1</title>
+		<Director>Lee</Director>
+		<Genre>1</Genre>
+		<RunTime>120</RunTime>
+		<ReleaseTime>2017-04-14</ReleaseTime>
+	</movie>
+	<movie>
+		<title>速度与激情2</title>
+		<Director>Lee</Director>
+		<Genre>2</Genre>
+		<RunTime>130</RunTime>
+		<ReleaseTime>2017-04-14</ReleaseTime>
+	</movie>
+	<movie>
+		<title>速度与激情3</title>
+		<Director>Lee</Director>
+		<Genre>3</Genre>
+		<RunTime>140</RunTime>
+		<ReleaseTime>2017-04-14</ReleaseTime>
+	</movie>
+	</movies>

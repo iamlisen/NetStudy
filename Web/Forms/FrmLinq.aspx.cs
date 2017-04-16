@@ -15,9 +15,8 @@ namespace Web
 		public void Page_Load(object sender,EventArgs e){
 			var movies = GetMovies();
 			var genres = GetGenres();
-			var query = from m in movies
-				    join g in genres on m.Genre equals g.ID
-				    select new { m.Genre, g.Text };
+			var query = (from m in movies
+				     select m).Skip(2).Take(2);
  			gridView.DataSource = query;
 			gridView.DataBind();
 		}

@@ -71,6 +71,7 @@
       <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
@@ -148,6 +149,8 @@
     <Content Include="UserControl\FirstUserControl.ascx" />
     <Content Include="Forms\FrmUserControl.aspx" />
     <Content Include="Forms\FrmLinq.aspx" />
+    <Content Include="Forms\FrmLinqToXml.aspx" />
+    <Content Include="Forms\FrmWebService.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -207,6 +210,21 @@
     <Compile Include="Forms\FrmLinq.aspx.designer.cs">
       <DependentUpon>FrmLinq.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmLinqToXml.aspx.cs">
+      <DependentUpon>FrmLinqToXml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmLinqToXml.aspx.designer.cs">
+      <DependentUpon>FrmLinqToXml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\n127_0_0_1\Reference.cs">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmWebService.aspx.cs">
+      <DependentUpon>FrmWebService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmWebService.aspx.designer.cs">
+      <DependentUpon>FrmWebService.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\jquery-3.1.1.slim.min.map" />
@@ -216,6 +234,13 @@
     <None Include="Content\bootstrap.css.map" />
     <None Include="Content\bootstrap-theme.min.css.map" />
     <None Include="Content\bootstrap-theme.css.map" />
+    <None Include="App_Data\Movie.xml" />
+    <None Include="Web References\n127_0_0_1\WebService.disco" />
+    <None Include="Web References\n127_0_0_1\WebService.wsdl" />
+    <None Include="Web References\n127_0_0_1\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -229,6 +254,16 @@
       <Project>{DE792A93-5A6D-40E7-BD2E-E0153C6A9858}</Project>
       <Name>Entity</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://127.0.0.1:8080/WebService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\n127_0_0_1</RelPath>
+      <UpdateFromURL>http://127.0.0.1:8080/WebService.asmx</UpdateFromURL>
+    </WebReferenceUrl>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
