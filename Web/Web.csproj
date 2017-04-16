@@ -67,6 +67,10 @@
     <Reference Include="System.Web.Mvc">
       <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
@@ -138,6 +142,12 @@
     <Content Include="Forms\Form1.aspx" />
     <Content Include="Forms\FrmView.aspx" />
     <Content Include="Forms\FrmWizard.aspx" />
+    <Content Include="Images\IMG_0155.JPG" />
+    <Content Include="Forms\FrmImageMap.aspx" />
+    <Content Include="Forms\FrmValidation.aspx" />
+    <Content Include="UserControl\FirstUserControl.ascx" />
+    <Content Include="Forms\FrmUserControl.aspx" />
+    <Content Include="Forms\FrmLinq.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -167,6 +177,36 @@
     <Compile Include="Forms\FrmWizard.aspx.designer.cs">
       <DependentUpon>FrmWizard.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmImageMap.aspx.cs">
+      <DependentUpon>FrmImageMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmImageMap.aspx.designer.cs">
+      <DependentUpon>FrmImageMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmValidation.aspx.cs">
+      <DependentUpon>FrmValidation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmValidation.aspx.designer.cs">
+      <DependentUpon>FrmValidation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\FirstUserControl.ascx.cs">
+      <DependentUpon>FirstUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\FirstUserControl.ascx.designer.cs">
+      <DependentUpon>FirstUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmUserControl.aspx.cs">
+      <DependentUpon>FrmUserControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmUserControl.aspx.designer.cs">
+      <DependentUpon>FrmUserControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmLinq.aspx.cs">
+      <DependentUpon>FrmLinq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmLinq.aspx.designer.cs">
+      <DependentUpon>FrmLinq.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\jquery-3.1.1.slim.min.map" />
@@ -182,6 +222,13 @@
     <Folder Include="App_Code\" />
     <Folder Include="Images\" />
     <Folder Include="Forms\" />
+    <Folder Include="UserControl\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{DE792A93-5A6D-40E7-BD2E-E0153C6A9858}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
